@@ -1,42 +1,66 @@
-# 💡 Industrial Lighting PIM & Spatial Extraction Pipeline (Case Study)
+# 💡 Lighting Data Intelligence — Industrial PIM Engineering & Spatial Extraction Pipeline
 
-An interactive, production-ready portfolio case study demonstrating how an end-to-end data engineering pipeline digitized **16,781 technical references** across major lighting manufacturers (RZB, SLV, AWEX) with a **0% photometric error rate**.
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://zaneendataa.vercel.app)
+[![Tech Stack](https://img.shields.io/badge/Stack-Next.js%2014%20%7C%20TypeScript%20%7C%20Tailwind%20CSS-blue?style=for-the-badge)](https://zaneendataa.vercel.app)
+[![Data Scope](https://img.shields.io/badge/Data%20Scope-16%2C781%20SKUs%20Digitized-gold?style=for-the-badge)](https://zaneendataa.vercel.app)
 
----
-
-## 🌟 Highlights
-- **Framework**: Next.js 14 (App Router) + TypeScript + Tailwind CSS.
-- **Design System**: Warm Light Theme with Dark Gold accents (`#C5A059`, `#FDFBF7`) inspired by high-end modern SaaS portfolios.
-- **Storytelling Flow (Steps 01 to 05)**:
-  - Step 01: Raw Vector PDF Layout Chaos.
-  - Step 02: Why Conventional Scraping & RegEx Failed (Hallucinations & WAF).
-  - Step 03: Spatial Bounding Box Centroids ($X_{center}$) & Matrix Expansion (`.00X`).
-  - Step 04: Semantic Qualification (Sockets vs Integrated LED, Accessory Purging).
-  - Step 05: Consolidated Master Database (16,781 SKUs × 26 Attributes).
-- **Interactive Before / After Inspector**: Demonstrates 6 challenging real-world SKUs (`312421.002.76`, `10120.002`, `1008715`, `113150`, `1007443`, `LV2A / ARNS`).
-- **Interactive Pipeline Runner**: Mock terminal showing the C++ vector-optimized PyMuPDF execution.
+> 🔗 **Découvrez le projet en direct :** [https://zaneendataa.vercel.app](https://zaneendataa.vercel.app)
 
 ---
 
-## 🚀 How to Run Locally
+## 📌 Présentation du Projet
+
+Ce projet présente l'architecture, la méthodologie et les résultats d'un pipeline d'ingénierie de données industrielles conçu pour digitaliser et qualifier **16 781 références techniques** issues de catalogues fabricants complexes, avec un **taux d'erreur photométrique de 0%**.
+
+De l'échec initial des scrapers conventionnels (hallucinations de puissances sur douilles amovibles, télescopage de colonnes, blocages Cloudflare WAF) à la mise en place d'un moteur géométrique spatial et d'un décodeur matriciel de variantes, le projet démontre comment fiabiliser des données critiques destinées aux moteurs de recherche e-commerce et aux systèmes ERP.
+
+---
+
+## 🚀 Fonctionnalités & Contenu de l'Interface
+
+Visitez **[https://zaneendataa.vercel.app](https://zaneendataa.vercel.app)** pour explorer l'ensemble des modules interactifs :
+
+1. **Parcours Narratif du Projet (Étapes 01 à 05)** :
+   - *Étape 01 : Le Défi Initial* — Le chaos des catalogues PDF vectoriels multi-colonnes de plus de 1 000 pages.
+   - *Étape 02 : L'Échec du Scraping Linéaire* — Diagnostic des hallucinations photométriques et des verrous de sécurité web.
+   - *Étape 03 : L'Innovation Géométrique* — Segmentation spatiale par boîtes englobantes ($X_{center}$) et expansion matricielle des variantes commerciales (`.00X`).
+   - *Étape 04 : La Qualification Sémantique* — Dissociation stricte des douilles (E27, GU10) et neutralisation des accessoires mécaniques nus.
+   - *Étape 05 : La Livraison Finale* — Consolidation de la base de données maître (16 781 lignes × 26 attributs techniques).
+
+2. **Preuve par l'Exemple (Comparatif Avant / Après)** :
+   - Inspection comparative interactive sur 6 cas réels complexes avec zooms haute définition issus directement des documents sources.
+
+3. **Tableau de Bord Analytique (Style Power BI)** :
+   - Visualisation interactive du taux de remplissage par attribut PIM (Dimensions, IP, IK, DALI, Lumens, Watts, CCT) et distribution par typologie de catalogue.
+
+---
+
+## 🛠️ Stack Technique
+
+- **Frontend & Visualisation** : Next.js 14 (App Router), TypeScript, Tailwind CSS, Lucide Icons.
+- **Design System** : Thème Warm Light épuré avec accents Dark Gold, typographie contrastée et micro-interactions soignées.
+- **Déploiement** : Hébergement optimisé sur Vercel.
+
+---
+
+## 💻 Lancer le Projet en Local
 
 ```bash
-cd "/Users/sharaf_os/Fichiers locaux/projet light /projet_descriptionProjet"
+# Cloner le dépôt
+git clone git@github.com:Achraf-sghiouar/Lighting_Data_INTELLIGENCE.git
+
+# Accéder au dossier
+cd Lighting_Data_INTELLIGENCE
+
+# Installer les dépendances
+npm install
+
+# Démarrer le serveur de développement
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) in your browser.
+Ouvrez [http://localhost:3000](http://localhost:3000) dans votre navigateur.
 
 ---
 
-## 🌐 Deploy to Vercel / GitHub
-1. Create a repository on GitHub.
-2. Push this folder to your repository:
-   ```bash
-   git init
-   git add .
-   git commit -m "feat: complete interactive PIM case study"
-   git remote add origin <your-repo-url>
-   git push -u origin main
-   ```
-3. Import the repository into [Vercel](https://vercel.com) — it will automatically detect Next.js and deploy in under 60 seconds!
+© 2026 Lighting Data Intelligence. Tous droits réservés.

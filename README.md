@@ -1,10 +1,6 @@
 # 💡 Lighting Data Intelligence — Industrial PIM Engineering & Spatial Extraction Pipeline
 
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://zaneendataa.vercel.app)
-[![Tech Stack](https://img.shields.io/badge/Stack-Next.js%2014%20%7C%20TypeScript%20%7C%20Tailwind%20CSS-blue?style=for-the-badge)](https://zaneendataa.vercel.app)
-[![Data Scope](https://img.shields.io/badge/Data%20Scope-16%2C781%20SKUs%20Digitized-gold?style=for-the-badge)](https://zaneendataa.vercel.app)
-
-> 🔗 **Découvrez le projet en direct :** [https://zaneendataa.vercel.app](https://zaneendataa.vercel.app)
+> 🔗 **Découvrez la présentation et les métriques du projet en direct :** [https://zaneendataa.vercel.app](https://zaneendataa.vercel.app)
 
 ---
 
@@ -16,51 +12,25 @@ De l'échec initial des scrapers conventionnels (hallucinations de puissances su
 
 ---
 
-## 🚀 Fonctionnalités & Contenu de l'Interface
+## 🚀 Les 5 Grandes Étapes Réalisées
 
-Visitez **[https://zaneendataa.vercel.app](https://zaneendataa.vercel.app)** pour explorer l'ensemble des modules interactifs :
+1. **Étape 01 : Le Défi Initial des Catalogues Sources**
+   - Traitement de catalogues PDF vectoriels denses de plus de 1 000 pages par fabricant, conçus pour l'impression visuelle humaine et non pour l'extraction automatique.
+   - Présence de mises en page complexes : jusqu'à 4 appareils distincts sur la même page partageant des blocs de texte communs et des notations matricielles (`.00X`).
 
-1. **Parcours Narratif du Projet (Étapes 01 à 05)** :
-   - *Étape 01 : Le Défi Initial* — Le chaos des catalogues PDF vectoriels multi-colonnes de plus de 1 000 pages.
-   - *Étape 02 : L'Échec du Scraping Linéaire* — Diagnostic des hallucinations photométriques et des verrous de sécurité web.
-   - *Étape 03 : L'Innovation Géométrique* — Segmentation spatiale par boîtes englobantes ($X_{center}$) et expansion matricielle des variantes commerciales (`.00X`).
-   - *Étape 04 : La Qualification Sémantique* — Dissociation stricte des douilles (E27, GU10) et neutralisation des accessoires mécaniques nus.
-   - *Étape 05 : La Livraison Finale* — Consolidation de la base de données maître (16 781 lignes × 26 attributs techniques).
+2. **Étape 02 : Résolution des Échecs du Scraping Conventionnel**
+   - Diagnostic et correction des hallucinations photométriques (ex: attribution automatique de 60W LED sur une carcasse à douille E27 vide).
+   - Contournement des sécurités web avancées (Cloudflare Turnstile WAF, gestion des bannières cookies Usercentrics dans le Shadow DOM et interfaces dynamiques SPA).
 
-2. **Preuve par l'Exemple (Comparatif Avant / Après)** :
-   - Inspection comparative interactive sur 6 cas réels complexes avec zooms haute définition issus directement des documents sources.
+3. **Étape 03 : L'Innovation Géométrique Spatiale & l'Expansion Matricielle**
+   - Conception d'un algorithme spatial basé sur les coordonnées horizontales ($X_{center}$) des boîtes englobantes (bounding boxes) pour isoler chirurgicalement chaque colonne de luminaire sans mélange de puissance ni de flux lumineux.
+   - Développement d'un moteur d'expansion matricielle pour décoder automatiquement les codes compacts (`.00X`) en toutes leurs variantes réelles de couleurs (blanc, argent, anthracite) et de gradation (DALI).
 
-3. **Tableau de Bord Analytique (Style Power BI)** :
-   - Visualisation interactive du taux de remplissage par attribut PIM (Dimensions, IP, IK, DALI, Lumens, Watts, CCT) et distribution par typologie de catalogue.
+4. **Étape 04 : Qualification Sémantique & Règle Anti-Hallucination**
+   - Standardisation électrotechnique : séparation stricte entre puissance système LED intégrée et puissance maximale admise sur douille amovible (`max_lamp_wattage_w`).
+   - Neutralisation complète des accessoires mécaniques (cadres d'encastrement nus, anneaux, patères) pour éliminer tout wattage ou lumen imaginaire.
+   - Vérification et routage direct vers les fiches techniques constructeurs officielles.
 
----
-
-## 🛠️ Stack Technique
-
-- **Frontend & Visualisation** : Next.js 14 (App Router), TypeScript, Tailwind CSS, Lucide Icons.
-- **Design System** : Thème Warm Light épuré avec accents Dark Gold, typographie contrastée et micro-interactions soignées.
-- **Déploiement** : Hébergement optimisé sur Vercel.
-
----
-
-## 💻 Lancer le Projet en Local
-
-```bash
-# Cloner le dépôt
-git clone git@github.com:Achraf-sghiouar/Lighting_Data_INTELLIGENCE.git
-
-# Accéder au dossier
-cd Lighting_Data_INTELLIGENCE
-
-# Installer les dépendances
-npm install
-
-# Démarrer le serveur de développement
-npm run dev
-```
-
-Ouvrez [http://localhost:3000](http://localhost:3000) dans votre navigateur.
-
----
-
-© 2026 Lighting Data Intelligence. Tous droits réservés.
+5. **Étape 05 : Livraison de la Base de Données PIM Industrielle**
+   - Consolidation finale d'une table maître exhaustive de **16 781 références qualifiées** réparties sur 26 colonnes techniques normalisées (Watts, Lumens, CCT, CRI, IP, IK, DALI, Dimensions, Liens directs).
+   - Génération de livrables multi-formats prêts pour l'intégration en production : table maître CSV, classeur Excel multi-onglets et exports JSON structurés.
